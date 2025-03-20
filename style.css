@@ -24,6 +24,8 @@ body {
     padding: 0 15px;
 }
 
+/* ... (outras partes do CSS permanecem iguais) ... */
+
 /* Header */
 .header {
     width: 100%;
@@ -44,11 +46,46 @@ body {
 }
 
 .logo img {
-    max-height: 100px; /* Reduzido para caber melhor */
+    max-height: 150px; /* Aumentado de 100px para 150px no desktop */
     width: auto;
     object-fit: contain;
 }
 
+.menu {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+/* ... (outras seções permanecem iguais) ... */
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .logo img {
+        max-height: 120px; /* Aumentado de 80px para 120px em tablets/mobile */
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    /* ... (outras regras permanecem iguais) ... */
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        max-height: 100px; /* Ajustado para 100px em telas muito pequenas */
+    }
+
+    /* ... (outras regras permanecem iguais) ... */
+}
 .menu {
     display: flex;
     gap: 1.5rem;
