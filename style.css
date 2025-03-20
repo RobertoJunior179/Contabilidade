@@ -26,10 +26,10 @@ body {
 
 /* Header */
 .header {
-    width: 80%;
+    width: 200%;
     background-color: rgba(0, 0, 0, 0.9);
     position: static;
-    z-index: 50%;
+    z-index: 10%;
     overflow: hidden;
 }
 
