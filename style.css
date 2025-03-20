@@ -27,11 +27,9 @@ body {
 /* Header */
 .header {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Adicionei um fundo para melhor contraste */
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100; /* Aumentei o z-index para garantir que fique acima de tudo */
+    background-color: rgba(0, 0, 0, 0.9);
+    position: relative; /* Mudei de fixed para relative para rolar com a página */
+    z-index: 10;
 }
 
 .navbar {
@@ -45,7 +43,7 @@ body {
 }
 
 .logo img {
-    height: 600px; /* Aumentei o logo no desktop */
+    height: 600px; /* Mantive o tamanho aumentado */
     width: auto;
     object-fit: contain;
     display: block;
@@ -83,7 +81,7 @@ body {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding-top: 8rem; /* Aumentei para evitar sobreposição com o header */
+    padding-top: 2rem; /* Reduzi o padding-top, já que o header não é mais fixo */
 }
 
 .hero::before {
@@ -180,7 +178,7 @@ body {
 
 /* About Page */
 .about-hero {
-    padding: 24rem 0 4rem; /* Aumentei o padding-top para evitar sobreposição */
+    padding: 2rem 0 4rem; /* Reduzi o padding-top, já que o header não é mais fixo */
     text-align: center;
     background-color: var(--secondary-color);
     position: relative;
@@ -314,11 +312,10 @@ body {
     .navbar {
         flex-direction: column;
         padding: 1rem 1%;
-        position: relative;
     }
 
     .logo img {
-        height: 400px; /* Ajustado para tablets */
+        height: 400px; /* Mantive o tamanho ajustado para tablets */
     }
 
     .menu {
@@ -336,7 +333,7 @@ body {
     }
 
     .hero {
-        padding-top: 6rem;
+        padding-top: 1rem;
     }
 
     .hero-content {
@@ -350,7 +347,7 @@ body {
     }
 
     .about-hero {
-        padding: 20rem 0 2rem; /* Ajustado para tablets */
+        padding: 1rem 0 2rem; /* Reduzi para tablets */
     }
 
     .features {
@@ -370,7 +367,7 @@ body {
 
 @media (max-width: 480px) {
     .logo img {
-        height: 300px; /* Ajustado para mobile pequeno */
+        height: 300px; /* Mantive o tamanho ajustado para mobile pequeno */
     }
 
     .navbar {
@@ -388,7 +385,7 @@ body {
     }
 
     .hero {
-        padding-top: 4rem;
+        padding-top: 0.5rem;
     }
 
     .hero-content h1 {
@@ -406,7 +403,7 @@ body {
     }
 
     .about-hero {
-        padding: 16rem 0 1.5rem; /* Ajustado para mobile pequeno */
+        padding: 0.5rem 0 1.5rem; /* Reduzi para mobile pequeno */
     }
 
     .about-hero h1 {
