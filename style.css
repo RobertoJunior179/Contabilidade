@@ -24,8 +24,6 @@ body {
     padding: 0 15px;
 }
 
-/* ... (outras partes do CSS permanecem iguais) ... */
-
 /* Header */
 .header {
     width: 100%;
@@ -40,52 +38,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2%;
+    padding: 1.5rem 2%;
     max-width: 1400px;
     margin: 0 auto;
 }
 
 .logo img {
-    max-height: 150px; /* Aumentado de 100px para 150px no desktop */
+    max-height: 200px; /* Logo maior no desktop */
     width: auto;
     object-fit: contain;
 }
 
-.menu {
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-}
-
-/* ... (outras seções permanecem iguais) ... */
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .logo img {
-        max-height: 120px; /* Aumentado de 80px para 120px em tablets/mobile */
-    }
-
-    .menu {
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: 1rem;
-    }
-
-    /* ... (outras regras permanecem iguais) ... */
-}
-
-@media (max-width: 480px) {
-    .logo img {
-        max-height: 100px; /* Ajustado para 100px em telas muito pequenas */
-    }
-
-    /* ... (outras regras permanecem iguais) ... */
-}
 .menu {
     display: flex;
     gap: 1.5rem;
@@ -142,7 +105,7 @@ body {
 }
 
 .hero-content h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem); /* Ajusta dinamicamente */
+    font-size: clamp(2rem, 5vw, 3.5rem);
     margin-bottom: 1.5rem;
     font-weight: 500;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
@@ -196,7 +159,7 @@ body {
 
 .service-card img {
     width: 100%;
-    height: auto; /* Remove altura fixa */
+    height: auto;
     max-height: 150px;
     object-fit: cover;
     border-radius: 5px;
@@ -210,8 +173,11 @@ body {
 
 /* About Page */
 .about-hero {
-    padding: 6rem 0 3rem;
+    padding: 8rem 0 3rem; /* Aumentado para evitar sobreposição */
     text-align: center;
+    background-color: var(--secondary-color);
+    position: relative;
+    z-index: 1;
 }
 
 .about-hero h1 {
@@ -233,6 +199,7 @@ body {
 
 .features {
     padding: 3rem 0;
+    background-color: var(--secondary-color);
 }
 
 .feature-grid {
@@ -330,17 +297,17 @@ body {
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        padding: 1rem;
+        padding: 1.5rem 1%;
     }
 
     .logo img {
-        max-height: 80px;
+        max-height: 150px; /* Logo maior em tablets */
     }
 
     .menu {
         flex-direction: column;
         gap: 1rem;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
     }
 
     .hero-content {
@@ -350,6 +317,10 @@ body {
     .services-grid,
     .feature-grid {
         grid-template-columns: 1fr;
+    }
+
+    .about-hero {
+        padding: 7rem 0 2rem; /* Ajustado para tablets */
     }
 
     .footer-bottom {
@@ -364,6 +335,10 @@ body {
 }
 
 @media (max-width: 480px) {
+    .logo img {
+        max-height: 120px; /* Logo maior em mobile pequeno */
+    }
+
     .hero-content h1 {
         font-size: 1.8rem;
     }
@@ -376,5 +351,13 @@ body {
     .service-card,
     .feature-card {
         padding: 1rem;
+    }
+
+    .about-hero {
+        padding: 6rem 0 1.5rem; /* Ajustado para mobile pequeno */
+    }
+
+    .menu {
+        margin-top: 1rem;
     }
 }
