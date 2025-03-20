@@ -17,15 +17,27 @@ body {
     background-color: var(--secondary-color);
     color: var(--white);
 }
-/* Ajustes para telas menores (ex.: celular) */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Ajustes para celular (telas até 600px de largura) */
 @media (max-width: 600px) {
     body {
         font-size: 16px;
+        padding: 10px;
     }
-.container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 15px;
+    .container {
+        width: 100%; /* Usa toda a largura em telas pequenas */
+    }
+}
+
+/* Opcional: ajuste para tablets (entre 600px e 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .container {
+        width: 90%;
+    }
 }
 
 /* Header */
