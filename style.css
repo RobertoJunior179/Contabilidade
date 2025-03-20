@@ -29,7 +29,7 @@ body {
     width: 80%;
     background-color: rgba(0, 0, 0, 0.9);
     position: static;
-    z-index: 20%;
+    z-index: 50%;
     overflow: hidden;
 }
 
