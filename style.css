@@ -37,23 +37,24 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.3rem 2%; /* Reduzi o padding no desktop */
+    padding: 0.05rem 2%;
     max-width: 1400px;
     margin: 0 auto;
     flex-wrap: wrap;
 }
 
 .logo img {
-    height: 200px; /* Reduzi o tamanho do logo no desktop */
-    width: auto;
+    width: 200px; /* Aumentei a largura do logo no desktop */
+    height: auto; /* Mantive a proporção */
     object-fit: contain;
     display: block;
 }
 
 .menu {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem; /* Reduzi o gap para evitar que os botões fiquem muito espaçados */
     align-items: center;
+    margin-top: 0;
 }
 
 .menu a {
@@ -82,7 +83,7 @@ body {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
 }
 
 .hero::before {
@@ -180,7 +181,7 @@ body {
 /* About Page */
 .about-hero {
     padding: 4rem 0;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     text-align: center;
     background-color: var(--secondary-color);
     position: relative;
@@ -313,17 +314,18 @@ body {
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        padding: 0.2rem 1%; /* Reduzi o padding em tablets */
+        padding: 0.03rem 1%;
     }
 
     .logo img {
-        height: 150px; /* Reduzi o tamanho do logo em tablets */
+        width: 150px; /* Aumentei a largura do logo em tablets */
+        height: auto; /* Mantive a proporção */
     }
 
     .menu {
         flex-direction: row;
         gap: 1rem;
-        margin-top: 0.5rem;
+        margin-top: 0;
         width: 100%;
         justify-content: center;
         flex-wrap: wrap;
@@ -335,7 +337,7 @@ body {
     }
 
     .hero {
-        margin-top: 1.5rem;
+        margin-top: 0.4rem;
     }
 
     .hero-content {
@@ -349,7 +351,7 @@ body {
     }
 
     .about-hero {
-        margin-top: 1.5rem;
+        margin-top: 0.4rem;
         padding: 2rem 0;
     }
 
@@ -370,15 +372,16 @@ body {
 
 @media (max-width: 480px) {
     .navbar {
-        padding: 0.1rem 1%; /* Reduzi o padding em mobile pequeno */
+        padding: 0.03rem 1%;
     }
 
     .logo img {
-        height: 100px; /* Reduzi o tamanho do logo em mobile pequeno */
+        width: 120px; /* Aumentei a largura do logo em mobile pequeno */
+        height: auto; /* Mantive a proporção */
     }
 
     .menu {
-        margin-top: 0.3rem;
+        margin-top: 0;
         gap: 0.5rem;
     }
 
@@ -388,7 +391,7 @@ body {
     }
 
     .hero {
-        margin-top: 1rem;
+        margin-top: 0.3rem;
     }
 
     .hero-content h1 {
@@ -406,7 +409,7 @@ body {
     }
 
     .about-hero {
-        margin-top: 1rem;
+        margin-top: 0.3rem;
         padding: 1rem 0;
     }
 
