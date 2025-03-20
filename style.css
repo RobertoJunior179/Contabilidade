@@ -27,11 +27,11 @@ body {
 /* Header */
 .header {
     width: 100%;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.9); /* Adicionei um fundo para melhor contraste */
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 100; /* Aumentei o z-index para garantir que fique acima de tudo */
 }
 
 .navbar {
@@ -41,14 +41,14 @@ body {
     padding: 1rem 2%;
     max-width: 1400px;
     margin: 0 auto;
-    flex-wrap: wrap; /* Permite que o menu quebre linha se necessário */
+    flex-wrap: wrap;
 }
 
 .logo img {
-    height: 500px; /* Aumentei ainda mais o logo */
+    height: 600px; /* Aumentei o logo no desktop */
     width: auto;
     object-fit: contain;
-    display: block; /* Garante que o logo seja tratado como bloco */
+    display: block;
 }
 
 .menu {
@@ -83,7 +83,7 @@ body {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding-top: 6rem; /* Aumentei para evitar sobreposição com o header */
+    padding-top: 8rem; /* Aumentei para evitar sobreposição com o header */
 }
 
 .hero::before {
@@ -180,7 +180,7 @@ body {
 
 /* About Page */
 .about-hero {
-    padding: 20rem 0 4rem; /* Aumentei muito o padding-top para evitar sobreposição */
+    padding: 24rem 0 4rem; /* Aumentei o padding-top para evitar sobreposição */
     text-align: center;
     background-color: var(--secondary-color);
     position: relative;
@@ -191,8 +191,8 @@ body {
     font-size: clamp(1.8rem, 4vw, 2.5rem);
     color: var(--primary-color);
     margin-bottom: 2rem;
-    line-height: 1.2; /* Adicionado para evitar quebras estranhas */
-    word-break: normal; /* Evita quebras indesejadas no texto */
+    line-height: 1.2;
+    word-break: normal;
 }
 
 .hero-text {
@@ -318,7 +318,7 @@ body {
     }
 
     .logo img {
-        height: 300px; /* Ajustado para tablets */
+        height: 400px; /* Ajustado para tablets */
     }
 
     .menu {
@@ -336,7 +336,7 @@ body {
     }
 
     .hero {
-        padding-top: 4rem;
+        padding-top: 6rem;
     }
 
     .hero-content {
@@ -350,7 +350,7 @@ body {
     }
 
     .about-hero {
-        padding: 16rem 0 2rem; /* Ajustado para tablets */
+        padding: 20rem 0 2rem; /* Ajustado para tablets */
     }
 
     .features {
@@ -370,7 +370,7 @@ body {
 
 @media (max-width: 480px) {
     .logo img {
-        height: 200px; /* Ajustado para mobile pequeno */
+        height: 300px; /* Ajustado para mobile pequeno */
     }
 
     .navbar {
@@ -388,7 +388,7 @@ body {
     }
 
     .hero {
-        padding-top: 3rem;
+        padding-top: 4rem;
     }
 
     .hero-content h1 {
@@ -406,7 +406,7 @@ body {
     }
 
     .about-hero {
-        padding: 12rem 0 1.5rem; /* Ajustado para mobile pequeno */
+        padding: 16rem 0 1.5rem; /* Ajustado para mobile pequeno */
     }
 
     .about-hero h1 {
