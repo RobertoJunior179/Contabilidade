@@ -28,22 +28,23 @@ body {
 .header {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
-    position: static; /* Mudei para static para garantir que role com a página */
+    position: static;
     z-index: 10;
+    overflow: hidden;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2%;
+    padding: 0.5rem 2%; /* Reduzi o padding para diminuir o espaço vertical */
     max-width: 1400px;
     margin: 0 auto;
     flex-wrap: wrap;
 }
 
 .logo img {
-    height: 600px; /* Mantive o tamanho aumentado */
+    height: 400px; /* Reduzi o tamanho do logo no desktop */
     width: auto;
     object-fit: contain;
     display: block;
@@ -81,7 +82,7 @@ body {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding-top: 2rem;
+    margin-top: 2rem; /* Reduzi o margin-top para um espaço profissional */
 }
 
 .hero::before {
@@ -178,7 +179,8 @@ body {
 
 /* About Page */
 .about-hero {
-    padding: 2rem 0 4rem;
+    padding: 4rem 0;
+    margin-top: 2rem; /* Reduzi o margin-top para um espaço profissional */
     text-align: center;
     background-color: var(--secondary-color);
     position: relative;
@@ -311,17 +313,17 @@ body {
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        padding: 1rem 1%;
+        padding: 0.5rem 1%;
     }
 
     .logo img {
-        height: 400px;
+        height: 300px; /* Reduzi o tamanho do logo em tablets */
     }
 
     .menu {
         flex-direction: row;
         gap: 1rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
         width: 100%;
         justify-content: center;
         flex-wrap: wrap;
@@ -333,7 +335,7 @@ body {
     }
 
     .hero {
-        padding-top: 1rem;
+        margin-top: 1.5rem; /* Ajustei para tablets */
     }
 
     .hero-content {
@@ -347,7 +349,8 @@ body {
     }
 
     .about-hero {
-        padding: 1rem 0 2rem;
+        margin-top: 1.5rem; /* Ajustei para tablets */
+        padding: 2rem 0;
     }
 
     .features {
@@ -367,15 +370,15 @@ body {
 
 @media (max-width: 480px) {
     .logo img {
-        height: 300px;
+        height: 200px; /* Reduzi o tamanho do logo em mobile pequeno */
     }
 
     .navbar {
-        padding: 0.5rem 1%;
+        padding: 0.3rem 1%;
     }
 
     .menu {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         gap: 0.5rem;
     }
 
@@ -385,7 +388,7 @@ body {
     }
 
     .hero {
-        padding-top: 0.5rem;
+        margin-top: 1rem; /* Ajustei para mobile pequeno */
     }
 
     .hero-content h1 {
@@ -403,7 +406,8 @@ body {
     }
 
     .about-hero {
-        padding: 0.5rem 0 1.5rem;
+        margin-top: 1rem; /* Ajustei para mobile pequeno */
+        padding: 1rem 0;
     }
 
     .about-hero h1 {
