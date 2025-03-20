@@ -44,7 +44,7 @@ body {
 }
 
 .logo img {
-    width: 200px; /* Aumentei a largura do logo no desktop */
+    width: 300px; /* Aumentei a largura do logo no desktop */
     height: auto; /* Mantive a proporção */
     object-fit: contain;
     display: block;
@@ -52,7 +52,7 @@ body {
 
 .menu {
     display: flex;
-    gap: 1.5rem; /* Reduzi o gap para evitar que os botões fiquem muito espaçados */
+    gap: 1rem; /* Reduzi o gap para evitar que os botões sejam empurrados para fora */
     align-items: center;
     margin-top: 0;
 }
@@ -318,13 +318,13 @@ body {
     }
 
     .logo img {
-        width: 150px; /* Aumentei a largura do logo em tablets */
+        width: 200px; /* Aumentei a largura do logo em tablets */
         height: auto; /* Mantive a proporção */
     }
 
     .menu {
         flex-direction: row;
-        gap: 1rem;
+        gap: 0.8rem; /* Reduzi o gap em tablets */
         margin-top: 0;
         width: 100%;
         justify-content: center;
@@ -376,13 +376,13 @@ body {
     }
 
     .logo img {
-        width: 120px; /* Aumentei a largura do logo em mobile pequeno */
+        width: 150px; /* Aumentei a largura do logo em mobile pequeno */
         height: auto; /* Mantive a proporção */
     }
 
     .menu {
         margin-top: 0;
-        gap: 0.5rem;
+        gap: 0.5rem; /* Mantive o gap reduzido em mobile pequeno */
     }
 
     .menu a {
