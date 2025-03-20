@@ -28,7 +28,7 @@ body {
 .header {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
-    position: relative; /* Mudei de fixed para relative para rolar com a página */
+    position: static; /* Mudei para static para garantir que role com a página */
     z-index: 10;
 }
 
@@ -81,7 +81,7 @@ body {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding-top: 2rem; /* Reduzi o padding-top, já que o header não é mais fixo */
+    padding-top: 2rem;
 }
 
 .hero::before {
@@ -178,7 +178,7 @@ body {
 
 /* About Page */
 .about-hero {
-    padding: 2rem 0 4rem; /* Reduzi o padding-top, já que o header não é mais fixo */
+    padding: 2rem 0 4rem;
     text-align: center;
     background-color: var(--secondary-color);
     position: relative;
@@ -315,7 +315,7 @@ body {
     }
 
     .logo img {
-        height: 400px; /* Mantive o tamanho ajustado para tablets */
+        height: 400px;
     }
 
     .menu {
@@ -347,7 +347,7 @@ body {
     }
 
     .about-hero {
-        padding: 1rem 0 2rem; /* Reduzi para tablets */
+        padding: 1rem 0 2rem;
     }
 
     .features {
@@ -367,7 +367,7 @@ body {
 
 @media (max-width: 480px) {
     .logo img {
-        height: 300px; /* Mantive o tamanho ajustado para mobile pequeno */
+        height: 300px;
     }
 
     .navbar {
@@ -403,7 +403,7 @@ body {
     }
 
     .about-hero {
-        padding: 0.5rem 0 1.5rem; /* Reduzi para mobile pequeno */
+        padding: 0.5rem 0 1.5rem;
     }
 
     .about-hero h1 {
